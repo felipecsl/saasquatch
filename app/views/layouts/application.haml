@@ -6,11 +6,17 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    %ul.hmenu
-      = render 'devise/menu/registration_items'
-      = render 'devise/menu/login_items'
-    %p{class: "notice"}
-      = notice
-    %p{class: "alert"}
-      = alert
-    = yield
+    #header
+      %h1
+        = link_to "Site Name", root_url
+      %ul.hmenu
+        = render 'devise/menu/registration_items'
+        = render 'devise/menu/login_items'
+    #body
+      %p{class: "notice"}
+        = notice
+      %p{class: "alert"}
+        = alert
+      = yield
+    #footer
+
