@@ -1,0 +1,19 @@
+== Saasquatch
+
+Saasquatch is a boilerplate Rails project to reduce the time it takes for you to create a new SaaS website from scratch.
+It is currently at development phase.
+It will initially support PagSeguro payment gateway, but we plan to support more gateways in the future, including recurring payments, etc.
+
+=== Contributors
+
+For now it does not have any contributors yet. Fork it and be the first!
+
+=== Maintainers
+
+* Felipe Lima (http://github.com/felipecsl)
+
+== License
+
+MIT License.
+
+
