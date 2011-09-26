@@ -1,0 +1,7 @@
+- if user_signed_in?
+  %li
+    = link_to('Sair', destroy_user_session_path, :method => :delete)
+- else
+  %li
+    = link_to('Entrar', new_user_session_path)
+    = link_to "Entrar com Facebook", user_omniauth_authorize_path(:facebook)

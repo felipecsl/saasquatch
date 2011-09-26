@@ -52,3 +52,672 @@ Started GET "/rails/info/properties" for 127.0.0.1 at 2011-09-26 11:51:52 -0300
   Processing by Rails::InfoController#properties as */*
 Rendered inline template (0.4ms)
 Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 12:56:35 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (1.1ms)
+Compiled application.css  (1ms)  (pid 39197)
+Compiled welcome.css  (17ms)  (pid 39197)
+Compiled application.js  (0ms)  (pid 39197)
+Compiled welcome.js  (344ms)  (pid 39197)
+Completed 200 OK in 450ms (Views: 449.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 12:56:36 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 12:56:36 -0300
+Served asset /welcome.css - 200 OK (9ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 12:56:36 -0300
+Served asset /welcome.js - 200 OK (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 12:56:36 -0300
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 12:56:36 -0300
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 13:25:06 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (2.6ms)
+Compiled application.css  (1ms)  (pid 39374)
+Compiled admin.css  (10ms)  (pid 39374)
+Compiled application.js  (1ms)  (pid 39374)
+Compiled admin.js  (182ms)  (pid 39374)
+Completed 500 Internal Server Error in 397ms
+
+ActionView::Template::Error (Missing partial devise/menu/registration_items with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/felipe/Data/Projects/saasquatch/app/views"
+  * "/Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views"
+):
+    7:     = csrf_meta_tags
+    8:   %body
+    9:     %ul.hmenu
+    10:       = render 'devise/menu/registration_items'
+    11:       = render 'devise/menu/login_items'
+    12:     %p{class: "notice"}
+    13:       = notice
+  app/views/layouts/application.haml:10:in `_app_views_layouts_application_haml__1626145092265450979_2172670820'
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 13:25:08 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (Missing partial devise/menu/registration_items with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/felipe/Data/Projects/saasquatch/app/views"
+  * "/Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views"
+):
+    7:     = csrf_meta_tags
+    8:   %body
+    9:     %ul.hmenu
+    10:       = render 'devise/menu/registration_items'
+    11:       = render 'devise/menu/login_items'
+    12:     %p{class: "notice"}
+    13:       = notice
+  app/views/layouts/application.haml:10:in `_app_views_layouts_application_haml__1626145092265450979_2172670820'
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 13:26:37 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (Missing partial devise/menu/registration_items with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/felipe/Data/Projects/saasquatch/app/views"
+  * "/Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views"
+):
+    7:     = csrf_meta_tags
+    8:   %body
+    9:     %ul.hmenu
+    10:       = render 'devise/menu/registration_items'
+    11:       = render 'devise/menu/login_items'
+    12:     %p{class: "notice"}
+    13:       = notice
+  app/views/layouts/application.haml:10:in `_app_views_layouts_application_haml__2988737992240430068_2175876720'
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (0.1ms)
+Rendered devise/menu/_registration_items.haml (11.4ms)
+Rendered devise/menu/_login_items.haml (3.4ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+Served asset /admin.css - 200 OK (25ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+Served asset /admin.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+Served asset /welcome.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:30:13 -0300
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (0.1ms)
+Rendered devise/menu/_registration_items.haml (12.2ms)
+Rendered devise/menu/_login_items.haml (2.7ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:30:59 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-26 13:31:01 -0300
+  Processing by Devise::RegistrationsController#new as HTML
+Mysql2::Error: Table 'saasquatch_development.users' doesn't exist: SHOW FIELDS FROM `users`
+Completed 500 Internal Server Error in 79ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'saasquatch_development.users' doesn't exist: SHOW FIELDS FROM `users`):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+  [1m[35m (11.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (23.4ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (16.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (2.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160407')[0m
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (13.2ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160820')[0m
+Migrating to CreateAdmins (20110926161126)
+  [1m[35m (0.8ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'admins' already exists: CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (2.3ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/registrations/new.html.erb within layouts/application (28.8ms)
+Rendered devise/menu/_registration_items.haml (0.8ms)
+Rendered devise/menu/_login_items.haml (0.5ms)
+Completed 200 OK in 59ms (Views: 38.9ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:31:36 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-26 13:33:29 -0300
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.2ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/registrations/new.html.erb within layouts/application (22.0ms)
+Compiled application.css  (1ms)  (pid 39383)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""
+  (in /Users/felipe/Data/Projects/saasquatch/app/assets/stylesheets/menu.css.scss)):
+    2: %html
+    3:   %head
+    4:     %title Saasquatch
+    5:     = stylesheet_link_tag    "application"
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+  app/assets/stylesheets/menu.css.scss:8
+  app/views/layouts/application.haml:5:in `_app_views_layouts_application_haml__2988737992240430068_2175876720'
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/registrations/new.html.erb within layouts/application (84.1ms)
+Compiled application.css  (1ms)  (pid 39383)
+Compiled menu.css  (3ms)  (pid 39383)
+Rendered devise/menu/_registration_items.haml (1.0ms)
+Rendered devise/menu/_login_items.haml (0.5ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /menu.css - 200 OK (11ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:33:40 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 13:33:48 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.2ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+Rendered devise/menu/_registration_items.haml (0.8ms)
+Rendered devise/menu/_login_items.haml (0.5ms)
+Completed 200 OK in 47ms (Views: 18.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:33:49 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (3.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/sessions/new.html.erb within layouts/application (21.1ms)
+Rendered devise/menu/_registration_items.haml (3.0ms)
+Rendered devise/menu/_login_items.haml (2.6ms)
+Completed 200 OK in 259ms (Views: 102.3ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /welcome.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /menu.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:42:02 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (0.9ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+Rendered devise/menu/_registration_items.haml (0.8ms)
+Rendered devise/menu/_login_items.haml (0.5ms)
+Completed 200 OK in 113ms (Views: 22.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:42:16 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/s" for 127.0.0.1 at 2011-09-26 13:43:00 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/s"):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/sessions/" for 127.0.0.1 at 2011-09-26 13:43:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/sessions"):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/sessions/new" for 127.0.0.1 at 2011-09-26 13:43:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/sessions/new"):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (0.9ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/sessions/new.html.erb within layouts/application (5.1ms)
+Rendered devise/menu/_registration_items.haml (0.7ms)
+Rendered devise/menu/_login_items.haml (0.5ms)
+Completed 200 OK in 106ms (Views: 16.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:03 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.7ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/sessions/new.html.erb within layouts/application (6.2ms)
+Rendered devise/menu/_registration_items.haml (0.8ms)
+Rendered devise/menu/_login_items.haml (0.6ms)
+Completed 200 OK in 47ms (Views: 17.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:43:21 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (2.0ms)
+Rendered users/sessions/new.html.erb within layouts/application (17.7ms)
+Rendered devise/menu/_registration_items.haml (2.9ms)
+Rendered devise/menu/_login_items.haml (2.7ms)
+Completed 200 OK in 240ms (Views: 144.5ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /menu.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /welcome.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 13:44:22 -0300
+Served asset /admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.4.7/app/views/devise/shared/_links.erb (2.3ms)
+Rendered users/sessions/new.haml within layouts/application (34.0ms)
+Rendered devise/menu/_registration_items.haml (3.1ms)
+Rendered devise/menu/_login_items.haml (3.0ms)
+Completed 200 OK in 384ms (Views: 248.9ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /menu.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 14:05:35 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 14:07:03 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (1.0ms)
+Rendered devise/menu/_registration_items.haml (87.6ms)
+Rendered devise/menu/_login_items.haml (0.5ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 14:07:04 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 14:11:44 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (0.1ms)
+Rendered devise/menu/_registration_items.haml (21.4ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (no such file to load -- omniauth/core):
+    1: - if user_signed_in?
+    2:   %li
+    3:     = link_to('Editar minha conta', edit_user_registration_path)
+    4: - else
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/views/devise/menu/_registration_items.haml:1:in `_app_views_devise_menu__registration_items_haml__3210269134763782670_2174158680'
+  app/views/layouts/application.haml:10:in `_app_views_layouts_application_haml__1150828852873916994_2161643680'
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+  Processing by WelcomeController#index as HTML
+Rendered welcome/index.haml within layouts/application (1.1ms)
+Rendered devise/menu/_registration_items.haml (3.1ms)
+Rendered devise/menu/_login_items.haml (2.7ms)
+Completed 200 OK in 98ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /menu.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-09-26 14:19:09 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2011-09-26 14:19:13 -0300

@@ -26,7 +26,7 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
+gem "omniauth", "0.3.0"
 gem "devise"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
