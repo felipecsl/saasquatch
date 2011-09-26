@@ -1901,3 +1901,92 @@ Served asset /welcome.css - 304 Not Modified (0ms)
 
 Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2011-09-26 14:47:28 -0300
 Served asset /admin.js - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+Migrating to CreateAdminUsers (20110926160820)
+Migrating to CreateAdmins (20110926161126)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'admins' already exists: CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (11.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (27.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+  [1m[35m (9.6ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (20.9ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (17.7ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160407')[0m
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (9.2ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160820')[0m
+Migrating to CreateAdmins (20110926161126)
+  [1m[35m (0.6ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'admins' already exists: CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20110926160820'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (0.5ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'admins' already exists: CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (0.5ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'admins' already exists: CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (19.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+  [1m[35m (9.9ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (18.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (17.5ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160407')[0m
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (9.2ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160820')[0m
+Migrating to CreateSubscriptions (20110926181402)
+  [1m[36m (17.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (17.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+  [1m[35m (12.1ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (20.9ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (16.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160407')[0m
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (10.3ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160820')[0m
+Migrating to CreateSubscriptions (20110926181402)
+  [1m[36m (19.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (19.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+  [1m[35m (10.2ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (20.3ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (18.9ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160407')[0m
+Migrating to CreateAdminUsers (20110926160820)
+  [1m[35m (9.6ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926160820')[0m
+Migrating to CreateSubscriptions (20110926181402)
+  [1m[35m (8.4ms)[0m  CREATE TABLE `subscriptions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `amount` float, `next_renewal_at` datetime, `card_number` varchar(255), `card_expiration` varchar(255), `state` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926181402')[0m
+Migrating to CreatePlans (20110926181904)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110926160407)
+Migrating to CreateAdminUsers (20110926160820)
+Migrating to CreateSubscriptions (20110926181402)
+Migrating to CreatePlans (20110926181904)
+  [1m[35m (8.3ms)[0m  CREATE TABLE `plans` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` float, `user_limit` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926181904')[0m
+Migrating to CreateSubscriptionPayments (20110926182156)
+  [1m[35m (11.5ms)[0m  CREATE TABLE `subscription_payments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `amount` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926182156')[0m
+Migrating to CreateAccounts (20110926182809)
+  [1m[35m (21.4ms)[0m  CREATE TABLE `accounts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `domain` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110926182809')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 

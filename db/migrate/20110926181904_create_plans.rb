@@ -3,7 +3,7 @@ class CreatePlans < ActiveRecord::Migration
     create_table :plans do |t|
       t.string :name
       t.float :price
-      t.int :user_limit
+      t.integer :user_limit
 
       t.timestamps
     end
