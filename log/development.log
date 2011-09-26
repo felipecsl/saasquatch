@@ -1,0 +1,54 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-26 11:48:41 -0300
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.8ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.4ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2011-09-26 11:48:44 -0300
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-26 11:51:14 -0300
+
+Mysql2::Error (Unknown database 'saasquatch_development'):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.9ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.8ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2011-09-26 11:51:16 -0300
+
+Mysql2::Error (Unknown database 'saasquatch_development'):
+  
+
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/felipe/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+  [1m[36m (12.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (19.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-09-26 11:51:50 -0300
+Served asset /rails.png - 200 OK (5ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2011-09-26 11:51:52 -0300
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  Processing by Rails::InfoController#properties as */*
+Rendered inline template (0.4ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
