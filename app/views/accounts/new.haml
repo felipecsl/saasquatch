@@ -7,6 +7,7 @@
       %ul
         - @account.errors.full_messages.each do |msg|
           %li= msg
+  = a.hidden_field :plan_id, value: @plan.id
   %div
     = a.label :name
     %br/
