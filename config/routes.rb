@@ -1,5 +1,5 @@
 Saasquatch::Application.routes.draw do
-  devise_for :users
+  devise_for :users, path: "plans/:plan_id/accounts/:id/users", controllers: { registrations: "user" }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

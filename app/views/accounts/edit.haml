@@ -1,5 +1,4 @@
-
-%h1.section Editar conta
+%h1.section Editar #{Account.model_name.human}
 = form_for([@account.plan, @account], method: 'put') do |a|
   - if @account.errors.any?
     #error_explanation
@@ -19,3 +18,4 @@
     = a.text_field :domain
     %span .example.com
   %div= a.submit "Salvar alterações"
+= render partial: "accounts/links"

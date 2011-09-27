@@ -1,4 +1,4 @@
-%h1.section Criar nova conta
+%h1.section Criar nova #{Account.model_name.human}
 = form_for([@plan, @account]) do |a|
   - if @account.errors.any?
     #error_explanation

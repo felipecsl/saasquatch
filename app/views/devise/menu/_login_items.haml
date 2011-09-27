@@ -1,6 +1,6 @@
 - if user_signed_in?
   %li
-    = link_to('Sair', destroy_user_session_path, :method => :delete)
+    = link_to('Sair', destroy_user_session_path(current_user.account.plan.id, current_user.account.id), :method => :delete)
 - else
   %li
     = link_to('Entrar', new_user_session_path)

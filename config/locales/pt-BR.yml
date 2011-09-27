@@ -225,6 +225,7 @@
   activerecord:
     models:
       user: Usuário
+      account: Conta
     attributes:
       user:
         name: "Nome"
