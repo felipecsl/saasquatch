@@ -16,8 +16,12 @@
     = a.label :domain
     %br/
     = a.text_field :domain
-  = a.fields_for :users, User.new do |u|
+  = a.fields_for :admins, User.new do |u|
     %h2 Dados do Usuário
+    %div
+      = u.label :name
+      %br/
+      = u.text_field :name
     %div
       = u.label :email
       %br/

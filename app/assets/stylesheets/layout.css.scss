@@ -1,3 +1,5 @@
+$siteWidth: 960px;
+$themeColor: #258bc0;
 body {
   font-family: sans-serif, Arial;
   color: #000;
@@ -22,10 +24,12 @@ a {
   }
 }
 #body {
-  width: 960px;
+  width: $siteWidth;
   margin: 0 auto;
   padding: 10px 0;
   font-size: 15px;
+  min-height: 400px;
+  border-bottom: 1px solid #CCC;
   h1, h2, h3, h4 {
     font-weight: bold;
     border-bottom: 1px solid #DDD;
@@ -33,6 +37,7 @@ a {
   }
   h1.section {
     font-size: 25px;
+    color: $themeColor;
     margin: 20px 0;
     text-shadow: 3px 3px 1px #ccc, 2px 2px 1px #bbb, 1px 1px 1px #aaa;
   }
@@ -48,6 +53,11 @@ a {
   .notice {
     text-align: center;
     color: green;
+    margin: 10px 0;
+  }
+  .alert {
+    text-align: center;
+    color: red;
     margin: 10px 0;
   }
   #error_explanation {
@@ -90,4 +100,15 @@ a {
       background-color: #eee;
     }
   }
+}
+#footer {
+  padding: 10px 0;
+  width: $siteWidth;
+  margin: 0 auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }

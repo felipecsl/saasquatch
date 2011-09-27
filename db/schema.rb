@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "account_id"
+    t.string   "name"
   end
 
   create_table "plans", :force => true do |t|
@@ -47,6 +48,9 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
 
   create_table "subscription_payments", :force => true do |t|
     t.float    "amount"
+    t.integer  "subscription_id"
+    t.integer  "account_id"
+    t.string   "transaction_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -73,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.integer  "account_id"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

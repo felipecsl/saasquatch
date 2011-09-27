@@ -7,6 +7,7 @@ class CreateAdminUsers < ActiveRecord::Migration
       t.timestamps
 
       t.integer :account_id
+      t.string :name
     end
   end
 

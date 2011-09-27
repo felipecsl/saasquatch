@@ -4,6 +4,47 @@ Saasquatch is a boilerplate Rails project to reduce the time it takes for you to
 It is currently at development phase.
 It will initially support PagSeguro payment gateway, but we plan to support more gateways in the future, including recurring payments, etc.
 
+== Roadmap
+
+1. Account management
+  a. Create/update account
+  b. Manage users
+  c. Manage admins
+  d. Subdomains (multi-tenant)
+  e. Cancel account
+  f. Soft deletion
+
+2. Users
+  a. Capture profile (avatar, name, personal info etc.)
+    I. Gravatar
+    II. Facebook
+  b. Invite users by email
+
+3. Plans
+  a. Trials
+  b. User limits
+
+4. Admin section (SuperUser)
+  a. Customize plans
+  b. List/details of accounts per plan
+  c. Financial overview
+
+5. Security
+  a. SSL
+
+5. Payments
+  a. Integration with gateway
+    I. Pagseguro
+    II. Recurring payments (eg.: MOIP)
+    III. Paypal
+  b. Trials
+  c. Upgrade plan
+  d. Downgrade plan
+
+3. Daily Mailer
+  a. Remind user to renew subscription when needed
+
+
 === Contributors
 
 For now it does not have any contributors yet. Fork it and be the first!

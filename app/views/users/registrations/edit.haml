@@ -1,7 +1,11 @@
-%h2.section
-  Edit #{resource_name.to_s.humanize}
+%h1.section
+  Editar usuário
 = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
   = devise_error_messages!
+  %div
+    = f.label :name
+    %br/
+    = f.text_field :name
   %div
     = f.label :email
     %br/
@@ -20,7 +24,7 @@
     %i (we need your current password to confirm your changes)
     %br/
     = f.password_field :current_password
-  %div= f.submit "Update"
+  %div= f.submit "Salvar"
 %h3 Cancel my account
 %p
   Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete}.

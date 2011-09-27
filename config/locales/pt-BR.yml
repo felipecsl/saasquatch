@@ -227,6 +227,14 @@
       user: Usuário
     attributes:
       user:
+        name: "Nome"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Repita a senha"
+        current_password: "Senha atual"
+        remember_me: "Lembrar-se de mim"
+      admin:
+        name: "Nome"
         email: "E-mail"
         password: "Senha"
         password_confirmation: "Repita a senha"

@@ -1,6 +1,10 @@
-%h2 Sign up
+%h1.section Criar usuário Administrador
 = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
   = devise_error_messages!
+  %div
+    = f.label :name
+    %br/
+    = f.text_field :name
   %div
     = f.label :email
     %br/
