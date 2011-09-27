@@ -1,0 +1,21 @@
+
+%h1.section Editar conta
+= form_for([@account.plan, @account], method: 'put') do |a|
+  - if @account.errors.any?
+    #error_explanation
+      %h2
+        (#{pluralize(@account.errors.count, "erro")}) Os seguintes itens estão incorretos:
+      %ul
+        - @account.errors.full_messages.each do |msg|
+          %li= msg
+  = a.hidden_field :plan_id, value: @account.plan.id
+  %div
+    = a.label :name
+    %br/
+    = a.text_field :name
+  %div
+    = a.label :domain
+    %br/
+    = a.text_field :domain
+    %span .example.com
+  %div= a.submit "Salvar alterações"

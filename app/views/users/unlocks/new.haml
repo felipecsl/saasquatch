@@ -1,9 +1,0 @@
-%h1.section Re-enviar instruções para desbloqueio
-= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
-  = devise_error_messages!
-  %div
-    = f.label :email
-    %br/
-    = f.email_field :email
-  %div= f.submit "Re-enviar instruções para desbloqueio"
-= render :partial => "devise/shared/links"

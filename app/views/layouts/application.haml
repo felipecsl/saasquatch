@@ -17,6 +17,8 @@
         = notice
       %p{class: "alert"}
         = alert
+      %p{class: "error"}
+        = flash[:error] if flash[:error]
       = yield
     #footer
       %p.left Site Name

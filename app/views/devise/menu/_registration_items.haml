@@ -1,6 +1,6 @@
 - if user_signed_in?
   %li
     = link_to('Editar meus dados', edit_user_registration_path)
-  - if admin_signed_in?
+  - if can? :manage, Account
     %li
-      = link_to('Editar minha conta', edit_plan_account_path(current_admin.account.plan.id, current_admin.account.id))
+      = link_to('Editar minha conta', edit_plan_account_path(current_user.account.plan.id, current_user.account.id))
