@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
   create_table "accounts", :force => true do |t|
     t.string   "name"
     t.string   "domain"
+    t.integer  "plan_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "account_id"
   end
 
   create_table "plans", :force => true do |t|
@@ -70,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.integer  "account_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

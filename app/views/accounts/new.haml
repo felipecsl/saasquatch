@@ -1,0 +1,32 @@
+%h1.section Criar nova conta
+= form_for([@plan, @account]) do |a|
+  - if @account.errors.any?
+    #error_explanation
+      %h2
+        (#{pluralize(@account.errors.count, "erro")}) Os seguintes itens estão incorretos:
+      %ul
+        - @account.errors.full_messages.each do |msg|
+          %li= msg
+  %div
+    = a.label :name
+    %br/
+    = a.text_field :name
+  %div
+    = a.label :domain
+    %br/
+    = a.text_field :domain
+  = a.fields_for :users, User.new do |u|
+    %h2 Dados do Usuário
+    %div
+      = u.label :email
+      %br/
+      = u.email_field :email
+    %div
+      = u.label :password
+      %br/
+      = u.password_field :password
+    %div
+      = u.label :password_confirmation
+      %br/
+      = u.password_field :password_confirmation
+  %div= a.submit "Criar minha conta"

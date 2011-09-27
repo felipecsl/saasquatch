@@ -5,6 +5,8 @@ class CreateAdminUsers < ActiveRecord::Migration
       t.lockable
       t.trackable
       t.timestamps
+
+      t.integer :account_id
     end
   end
 

@@ -31,14 +31,19 @@ a {
     border-bottom: 1px solid #DDD;
     padding-bottom: 5px;
   }
-  h1 {
-    font-size: 30px;
-    margin: 10px 0;
-  }
-  h2.section {
+  h1.section {
     font-size: 25px;
     margin: 20px 0;
     text-shadow: 3px 3px 1px #ccc, 2px 2px 1px #bbb, 1px 1px 1px #aaa;
+  }
+  h2 {
+    margin: 10px 0;
+  }
+  ul.plans {
+    margin: 10px 0;
+    li {
+      line-height: 20px;
+    }
   }
   .notice {
     text-align: center;

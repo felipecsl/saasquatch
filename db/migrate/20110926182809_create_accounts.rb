@@ -4,6 +4,7 @@ class CreateAccounts < ActiveRecord::Migration
       t.string :name
       t.string :domain
 
+      t.integer :plan_id
       t.timestamps
     end
   end
