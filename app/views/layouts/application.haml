@@ -8,7 +8,7 @@
   %body
     #header
       %h1
-        = link_to "Site Name", root_url
+        = link_to @account_name, root_url
       %ul.hmenu
         = render 'devise/menu/registration_items'
         = render 'devise/menu/login_items'
@@ -21,5 +21,5 @@
         = flash[:error] if flash[:error]
       = yield
     #footer
-      %p.left Site Name
+      %p.left #{@account_name}
       %p.right Copyright #{DateTime.now.year} &copy; Felipe Lima

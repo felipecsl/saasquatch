@@ -1,6 +1,14 @@
 #coding: utf-8
 class UsersController < ApplicationController
-  load_and_authorize_resource
+  check_authorization
+  load_and_authorize_resource except: [:edit, :update]
+  skip_authorization_check :only => [:edit, :update]
+  before_filter :authorized_to_edit_user, only: [:edit, :update]
+
+  rescue_from CanCan::AccessDenied do |exception|
+    flash[:error] = exception.message
+    redirect_to root_url
+  end
 
   def index
     @account = Account.find(params[:account_id])
@@ -45,4 +53,12 @@ class UsersController < ApplicationController
     end
   end
 
+  private
+  def authorized_to_edit_user
+    unauthorized = !current_user || current_user.id.to_s != params[:id]
+    if cannot?(:manage, User) && unauthorized
+      flash[:error] = "Você não está autorizado a acessar esta página"
+      redirect_to root_url
+    end
+  end
 end

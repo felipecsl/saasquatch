@@ -1,5 +1,5 @@
 %h1.section Criar nova #{Account.model_name.human}
-= form_for([@plan, @account]) do |a|
+= form_for(@account) do |a|
   - if @account.errors.any?
     #error_explanation
       %h2
@@ -16,6 +16,9 @@
     = a.label :domain
     %br/
     = a.text_field :domain
+    %span .example.com
+  %p Plano selecionado: #{@plan.name} - R$ #{@plan.price}
+  %br/
   = a.fields_for :users, User.new do |u|
     %h2 Dados do Usuário
     = u.hidden_field :role, value: "admin"

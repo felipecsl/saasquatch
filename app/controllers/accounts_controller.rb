@@ -1,4 +1,15 @@
-class AccountsController < AuthorizedController
+#coding: utf-8
+class AccountsController < ApplicationController
+  check_authorization
+  load_and_authorize_resource except: [:new, :create]
+  skip_authorization_check :only => [:new, :create]
+  before_filter :authenticate_user!, except: [:new, :create]
+
+  rescue_from CanCan::AccessDenied do |exception|
+    flash[:error] = exception.message
+    redirect_to root_url
+  end
+
   def new
     @plan = Plan.find_by_id(params[:plan_id])
     @account = Account.new(plan: @plan)
@@ -26,9 +37,5 @@ class AccountsController < AuthorizedController
         render :edit
       end
     end
-  end
-
-  def edit
-    @account = Account.find_by_id params[:id]
   end
 end

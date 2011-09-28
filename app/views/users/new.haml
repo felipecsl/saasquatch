@@ -1,6 +1,6 @@
 %h1.section Criar usuário
-= form_for(@user, url: user_registration_path) do |f|
-  = f.hidden_field :account_id, value: params[:id]
+= form_for(@user, url: account_users_path) do |f|
+  = f.hidden_field :account_id, value: params[:account_id]
   %div
     = f.label :name
     %br/
