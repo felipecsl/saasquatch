@@ -1,5 +1,9 @@
 Saasquatch::Application.routes.draw do
-  devise_for :users, path: "plans/:plan_id/accounts/:id/users", controllers: { registrations: "user" }
+  devise_for :users, path: "accounts/:id/users", skip: [:sessions, :registrations] do
+    get 'login', to: "devise/sessions#new"
+    post 'login', to: "devise/sessions#create"
+    get 'logout', to: "devise/sessions#destroy"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -13,8 +17,9 @@ Saasquatch::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  resources :plans do
-    resources :accounts
+  resources :plans
+  resources :accounts do
+    resources :users
   end
 
   # Sample resource route with options:

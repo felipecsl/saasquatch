@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   belongs_to :account
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :role, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :role, :email, :password, :password_confirmation, :remember_me, :account, :account_id
 
   ROLES = %w[admin user]
 

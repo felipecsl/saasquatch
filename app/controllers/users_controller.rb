@@ -1,8 +1,10 @@
-class UserController < ApplicationController
+#coding: utf-8
+class UsersController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @users = User.excludes(:id => current_user.id)
+    @account = Account.find(params[:account_id])
+    @users = User.where(account_id: @account.id)
   end
 
   def new
@@ -12,7 +14,7 @@ class UserController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:notice] = "Successfully created User."
+      flash[:notice] = "Usuário #{@user.name} criado com sucesso."
       redirect_to root_path
     else
       render :action => 'new'
@@ -28,7 +30,7 @@ class UserController < ApplicationController
     params[:user].delete(:password) if params[:user][:password].blank?
     params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
     if @user.update_attributes(params[:user])
-      flash[:notice] = "Successfully updated User."
+      flash[:notice] = "Usuário #{@user.name} atualizado com sucesso."
       redirect_to root_path
     else
       render :action => 'edit'
@@ -38,7 +40,7 @@ class UserController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     if @user.destroy
-      flash[:notice] = "Successfully deleted User."
+      flash[:notice] = "Usuário removido com sucesso."
       redirect_to root_path
     end
   end

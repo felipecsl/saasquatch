@@ -1,5 +1,6 @@
 %h1.section Criar usuário
 = form_for(@user, url: user_registration_path) do |f|
+  = f.hidden_field :account_id, value: params[:id]
   %div
     = f.label :name
     %br/
@@ -16,4 +17,4 @@
     = f.label :password_confirmation
     %br/
     = f.password_field :password_confirmation
-  %div= f.submit "Sign up"
+  %div= f.submit "Salvar"

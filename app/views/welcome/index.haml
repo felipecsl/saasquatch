@@ -1,5 +1,5 @@
 - if user_signed_in?
-  %h2 Bem vindo, #{current_user.email}
+  %h2 Bem vindo, #{current_user.name}
 - else
   %h2.section Planos
   %p Estes são os nosso planos. Escolha o seu:
@@ -7,4 +7,4 @@
     - Plan.all.each do |p|
       %li
         %a
-          = link_to "#{p.name} - R$ #{p.price}", new_plan_account_path(p.id)
+          = link_to "#{p.name} - R$ #{p.price}", new_account_path(plan_id: p.id)
