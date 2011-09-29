@@ -6,7 +6,6 @@ class CreateSubscriptionPayments < ActiveRecord::Migration
       t.integer :account_id
       t.string :transaction_id
 
-
       t.timestamps
     end
   end

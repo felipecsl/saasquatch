@@ -20,6 +20,7 @@ Saasquatch::Application.routes.draw do
   resources :plans
   resources :accounts do
     resources :users
+    resources :subscription_payments
   end
 
   # Sample resource route with options:

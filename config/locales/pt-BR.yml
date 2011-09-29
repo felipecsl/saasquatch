@@ -226,6 +226,7 @@
     models:
       user: Usuário
       account: Conta
+      subscription_payment: Cobranças
     attributes:
       user:
         name: "Nome"

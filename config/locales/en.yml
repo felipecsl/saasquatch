@@ -206,6 +206,28 @@
       even: "must be even"
 
   activerecord:
+    models:
+      user: Users
+      account: Account
+      subscription_payment: Billing
+    attributes:
+      user:
+        name: "Nome"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Repita a senha"
+        current_password: "Senha atual"
+        remember_me: "Lembrar-se de mim"
+      admin:
+        name: "Nome"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Repita a senha"
+        current_password: "Senha atual"
+        remember_me: "Lembrar-se de mim"
+      account:
+        name: "Nome"
+        domain: "Domínio"
     errors:
       template:
         header:

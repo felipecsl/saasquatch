@@ -7,3 +7,6 @@
   - if can? :manage, User
     %li
       = link_to(t(User.model_name.human.pluralize) , account_users_path(current_user.account.id))
+  - if can? :manage, SubscriptionPayment
+    %li
+      = link_to(t(SubscriptionPayment.model_name.human.pluralize) , account_subscription_payments_path(current_user.account.id))

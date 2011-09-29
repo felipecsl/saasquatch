@@ -5,5 +5,6 @@ class Ability
     return unless user
     can :manage, Account if user.role == "admin"
     can :manage, User if user.role == "admin"
+    can :manage, SubscriptionPayment if user.role == "admin"
   end
 end
