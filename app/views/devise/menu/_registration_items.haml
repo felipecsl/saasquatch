@@ -3,10 +3,10 @@
     = link_to('Editar meus dados', edit_account_user_path(current_user.account.id, current_user.id))
   - if can? :manage, Account
     %li
-      = link_to(t(Account.model_name.human) , edit_account_path(current_user.account.id))
+      = link_to(t(Account.model_name.human), edit_account_path(current_user.account.id))
   - if can? :manage, User
     %li
-      = link_to(t(User.model_name.human.pluralize) , account_users_path(current_user.account.id))
+      = link_to(t(User.model_name.human.pluralize), account_users_path(current_user.account.id))
   - if can? :manage, SubscriptionPayment
     %li
-      = link_to(t(SubscriptionPayment.model_name.human.pluralize) , account_subscription_payments_path(current_user.account.id))
+      = link_to(t(SubscriptionPayment.model_name.human.pluralize), account_subscription_payments_path(current_user.account.id))

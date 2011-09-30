@@ -5,6 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Plan.create(name: "Free", price: 0)
-Plan.create(name: "Basic", price: 10)
-Plan.create(name: "Premium", price: 30)
+p0 = Plan.create(name: "Free", price: 0)
+p1 = Plan.create(name: "Basic", price: 10)
+p2 = Plan.create(name: "Premium", price: 30)
+
+acct = Account.create(
+  name: "Test account",
+  domain: "test",
+  plan: p1,
+  users: [User.new(
+    name: "Felipe Lima",
+    email: "felipe.lima@gmail.com",
+    role: "admin",
+    password: "123456")])

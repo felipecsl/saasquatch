@@ -17,5 +17,28 @@
     %br/
     = a.text_field :domain
     %span .example.com
+  %h2 Informações do Cartão de Crédito
+  %div
+    = a.label :card_holder
+    %br/
+    = a.text_field :card_holder
+  =image_tag "/assets/cards.png"
+  %div
+    = a.label :card_number
+    %br/
+    = a.text_field :card_number, maxlength: 16
+  %div
+    %div.field
+      = a.label :card_expiration_month
+      %br/
+      = select_month(Date.today, :add_month_numbers => true, :field_name => 'card_expiration_month')
+    %div.field
+      = a.label :card_expiration_year
+      %br/
+      = select_year(Date.today, :start_year => DateTime.now.year + 10, :end_year => DateTime.now.year, :field_name => 'card_expiration_year')
+  %div.clear
+    = a.label :card_security_code
+    %br/
+    = a.text_field :card_security_code, maxlength: 4, class: "ccc"
   %div= a.submit "Salvar alterações"
 

@@ -228,6 +228,11 @@
       account:
         name: "Nome"
         domain: "Domínio"
+        card_number: "Number"
+        card_holder: "Full name"
+        card_expiration_month: "Expiration month"
+        card_expiration_year: "Expiration year"
+        card_security_code: "Security Code"
     errors:
       template:
         header:

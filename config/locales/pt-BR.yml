@@ -226,7 +226,7 @@
     models:
       user: Usuário
       account: Conta
-      subscription_payment: Cobranças
+      subscription_payment: Pagamento
     attributes:
       user:
         name: "Nome"
@@ -245,6 +245,11 @@
       account:
         name: "Nome"
         domain: "Domínio"
+        card_number: "Número"
+        card_holder: "Nome do titular"
+        card_expiration_month: "Mês de vencimento"
+        card_expiration_year: "Ano de vencimento"
+        card_security_code: "Código de Segurança"
     errors:
       template:
         header:

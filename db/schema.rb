@@ -17,6 +17,11 @@ ActiveRecord::Schema.define(:version => 20110926182809) do
     t.string   "name"
     t.string   "domain"
     t.integer  "plan_id"
+    t.string   "card_number"
+    t.integer  "card_expiration_month"
+    t.integer  "card_expiration_year"
+    t.string   "card_holder"
+    t.string   "card_security_code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

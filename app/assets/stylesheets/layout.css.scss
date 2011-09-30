@@ -120,6 +120,28 @@ a {
       line-height: 20px;
     }
   }
+  select {
+    border: none;
+    margin-top: 5px;
+    margin-left: 0;
+    padding: 7px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  form {
+    div.field {
+      float:left;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    input.ccc {
+      width: 50px;
+    }
+  }
 }
 #footer {
   padding: 10px 0;
@@ -132,4 +154,7 @@ a {
 }
 .right {
   float: right;
+}
+.clear {
+  clear: both;
 }
