@@ -1,5 +1,6 @@
 $siteWidth: 960px;
-$themeColor: #258bc0;
+$themeColor: #024C68;
+$themeSecColor: #a65600;
 body {
   font-family: sans-serif, Arial;
   color: #000;
@@ -34,12 +35,12 @@ a {
     font-weight: bold;
     border-bottom: 1px solid #DDD;
     padding-bottom: 5px;
+    text-shadow: 1px 1px 1px #62B1D0;
+    color: $themeColor;
   }
   h1.section {
     font-size: 25px;
-    color: $themeColor;
     margin: 20px 0;
-    text-shadow: 3px 3px 1px #ccc, 2px 2px 1px #bbb, 1px 1px 1px #aaa;
   }
   h2 {
     margin: 10px 0;
@@ -90,11 +91,14 @@ a {
   input[type=submit] {
     border: 1px solid #999;
     font-size: 15px;
-    background: #EEE;
+    background: $themeSecColor;
     border-radius: 0 5px 0 5px;
     padding: 5px 15px;
     margin: 15px 0;
     box-shadow: 1px 1px 1px #ccc;
+    color: white;
+    text-shadow: 0 1px #333;
+    cursor: pointer;
   }
   a {
     color: #444;
